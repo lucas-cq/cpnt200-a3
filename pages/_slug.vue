@@ -9,7 +9,7 @@
   export default {
   async asyncData({ $content, params, error }) {
     try {
-      const article = await $content(`articles/${params.slug}`).fetch()
+      const post = await $content(`articles/${params.slug}`).fetch()
     } catch (error) {
       error({ message: "Post Not Found" })}
     },

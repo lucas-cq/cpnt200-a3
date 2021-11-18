@@ -41,3 +41,16 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Location', name: 'location', widget: 'map' }
       - { label: 'About This Place', name: 'about-this-place', widget: 'string' }
+  - name: 'blog'
+    label: 'Blog'
+    folder: 'content/blog'
+    format: 'frontmatter'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
