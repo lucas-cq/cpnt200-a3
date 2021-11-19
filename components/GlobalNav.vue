@@ -3,8 +3,8 @@
   <nav>
       <ul>
         <li><NuxtLink class="nav-link" to="/">Home</NuxtLink></li>
-        <li><NuxtLink class="nav-link" to="/nerd-article">Articles</NuxtLink></li>
-        <li><NuxtLink class="nav-link" to="#">Gallery</NuxtLink></li>
+        <li><NuxtLink class="nav-link" to="/blog/">Articles</NuxtLink></li>
+        <li><NuxtLink class="nav-link" to="/gallery/">Gallery</NuxtLink></li>
         <li><NuxtLink class="nav-link" to="#">Contact</NuxtLink></li>
     </ul>
   </nav>
