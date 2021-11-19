@@ -3,6 +3,7 @@
   <GlobalNav />
   <article>
     <h2>{{ post.title }}</h2>
+    <p>{{ post.description }}</p>
     <nuxt-content :document="post" />
   </article>
   <MyFooter />
