@@ -1,20 +1,25 @@
 <template>
+  <div>
+  <GlobalNav />
   <article>
     <h2>{{ post.title }}</h2>
     <nuxt-content :document="post" />
   </article>
+  <MyFooter />
+  </div>
 </template>
 
 <script>
-  export default {
+export default {
   async asyncData({ $content, params, error }) {
     try {
-      const post = await $content(`articles/${params.slug}`).fetch()
+      const post = await $content(`blog/${params.slug}`).fetch()
+      return {
+        post,
+      }
     } catch (error) {
-      error({ message: "Post Not Found" })}
-    },
-    return: {
-      article,
-    },
+      error('No article found')
+    }
   }
+}
 </script>
