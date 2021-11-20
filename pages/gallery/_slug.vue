@@ -3,8 +3,8 @@
   <GlobalNav />
     <section>
       <h2>{{ post.title }}</h2>
-      <nuxt-img :src="post.image" />
-      <p>Date Added: {{ post.date }}</p>
+      <nuxt-img :src="post.image" width="400"/>
+      <p>Date Added: {{ post.date }} robot time</p>
     </section>
   <MyFooter />
   </div>
