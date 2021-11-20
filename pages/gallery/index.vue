@@ -8,7 +8,10 @@
 </template>
 
 <style scoped>
-
+  div {
+    text-align: center;
+    font-size: 25px
+  }
 </style>
 
 <script>

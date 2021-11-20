@@ -10,6 +10,12 @@
   </div>
 </template>
 
+<style scoped>
+  article {
+    margin-bottom: 33rem;
+  }
+</style>
+
 <script>
 export default {
   async asyncData({ $content, params, error }) {
